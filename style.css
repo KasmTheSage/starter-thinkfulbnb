@@ -55,7 +55,7 @@ main img {
   width: 80%;
 }
 
-#about img {
+#about img, #ideas img {
   width: 100%;
   height: 100%;
   padding-bottom: 5%;
@@ -68,6 +68,15 @@ main img {
   height: 25%;
   padding: 5%;
 }
+
+#ideas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+}
+
+
 
 /* -------  Navigation ------- */
 
