@@ -55,7 +55,7 @@ main img {
   width: 80%;
 }
 
-#about img, #ideas img {
+#about img, #ideas img, #host img {
   width: 100%;
   height: 100%;
   padding-bottom: 5%;
@@ -69,12 +69,13 @@ main img {
   padding: 5%;
 }
 
-#ideas {
+#ideas, #host {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 50%;
 }
+
 
 
 
