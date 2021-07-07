@@ -61,7 +61,7 @@ main img {
   padding-bottom: 5%;
 }
 
-#about {
+#about, .about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,3 +153,21 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    padding-right: 50%;
+  }
+
+  .about-container {
+    flex-direction: row;
+    height: 30%;
+    justify-content: space-evenly;
+  }
+
+  
+}
