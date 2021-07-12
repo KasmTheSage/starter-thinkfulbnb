@@ -76,6 +76,7 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 3em;
   color: #fff;
+  text-align: center;
 }
 
 header nav ul li {
