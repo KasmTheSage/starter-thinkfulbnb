@@ -107,6 +107,7 @@ form {
   display: flex;
   flex-direction: column;
   margin: auto;
+  flex: 1;
 }
 
 form div {
@@ -121,10 +122,10 @@ form label, form p {
   font-weight: bold;
 }
 
-form select,
-form input {
+
+form input, form select {
   margin-bottom: 20px;
-  width: 15em;
+  width: 50%;
 }
 
 form button {
@@ -174,13 +175,18 @@ footer p {
     width: 50%;
   }
 
+  form input {
+    width: 100%;
+  }
+
+  form select {
+    width: 100%;
+  }
+
   form div {
     display: flex;
     flex-direction: column;
-    width: 15em;
-  }
-  form input {
-    width: 90%;
+    width: 80%;
   }
 
   header, header nav, header nav ul, header nav ul li  {
@@ -208,22 +214,38 @@ footer p {
   
 }
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 900px) {
   .logo {
     margin-right: 40%;
   }
-}
 
-@media all and (min-width: 800px) {
   form {
     flex-direction: row;
-    width: 90%;
     justify-content: space-between;
   }
+  
+  form div {
+    margin-right: 2%;
+  }
+
+  form select {
+    width: 100%;
+  }
+
+  
+  
 }
+
+
 
 @media all and (min-width: 480px) {
   form {
     width: 74vw;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .logo {
+    font-size: 42px;
   }
 }
